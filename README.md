@@ -102,79 +102,79 @@ Studino/
 
 Każdy ekran aplikacji Studino pełni określoną rolę. Poniżej szczegółowy opis najważniejszych ekranów i ich funkcji:
 
-- AuthLoadingScreen:
+- **AuthLoadingScreen**:
   - Pierwszy ekran po uruchomieniu. Sprawdza stan autoryzacji (czy użytkownik jest już zalogowany).
   - Wyświetla spinner ładowania dopóki aplikacja inicjalizuje Firebase i sprawdza poświadczenia.
   - Jeśli użytkownik jest zalogowany i posiada profil w bazie, przechodzi do HomeScreen; w przeciwnym razie kieruje do LoginScreen.
-- LoginScreen:
+- **LoginScreen**:
   - Ekran logowania za pomocą konta Google. Wykorzystuje bibliotekę Google Sign-In.
   - Po pomyślnym logowaniu tworzy (lub aktualizuje) wpis użytkownika w kolekcji users w Firestore. Następnie przechodzi do ekranu konfiguracji profilu (ProfileSetupScreen) jeśli to pierwsze logowanie lub bezpośrednio do HomeScreen.
   - Zawiera przycisk „Zaloguj się przez Google” oraz umożliwia logowanie e-mailem i hasłem.
-- ProfileSetupScreen:
+- **ProfileSetupScreen**:
   - Wyświetlany po pierwszym logowaniu nowego użytkownika. Pozwala ustawić wstępne dane profilu takie jak nazwa użytkownika i awatar.
   - Po wypełnieniu formularza informacje zapisywane są w kolekcji users.
-- HomeScreen:
+- **HomeScreen**:
   - Główny pulpit użytkownika po zalogowaniu. Zawiera możliwość nawigacji do najważniejszych sekcji:
     - Przycisk prowadzący do ekranu wyboru quizów.
     - Przyciski do grania w minigry edukacyjne: osobne przyciski dla chemii, matematyki, angielskiego.
     - Widżety z szybkimi statystykami użytkownika (np. obecny streak, ilość ukończonych quizów, procent dobrych odpowiedzi).
     - Przycisk dostępu do własnego Profilu i Ustawień.
   - Na dole ekranu jest pasek nawigacyjny prowadzący do innych ekranów (Quizy, Profil, Tytuły, Ustawienia).
-- BrowseQuizzesScreen:
+- **BrowseQuizzesScreen**:
   - Ekran do przeglądania i wyszukiwania dostępnych quizów w bazie.
   - Zawiera pole do wyszukiwania po nazwie użytkownika i autorze
   - Możliwość sortowania lub filtrowania (np. najpopularniejsze, ostatnio dodane).
   - Wyświetla listę quizów z ich ogólnym opisem.
   - Kliknięcie w któryś otwiera ekran ze szczegółami.
-- QuizSelectScreen:
+- **QuizSelectScreen**:
   - Zawiera 4 przyciski do:
     - Tworzenia quizów
     - Szukania quizów
     - Zarządzania quizami
     - Historii quizów
-- QuizDetailsScreen:
+- **QuizDetailsScreen**:
   - Wyświetla szczegółowe informacje o wybranym quizie.
   - Pokazuje statystyki: ile razy quiz był zagrany, ile razy polubiony, średni procent poprawnych odpowiedzi.
   - Przycisk „Zagraj w quiz” rozpoczyna rozgrywkę (otwiera QuizGameScreen).
   - Zawiera przyciski do polubienia i dodania do ulubionych
-- QuizGameScreen:
+- **QuizGameScreen**:
   - Główny ekran rozgrywki wybranego quizu. Pytania mogą mieć różne typy: wielokrotnego wyboru (multiple choice) lub prawda/fałsz (true/false).
   - Użytkownik wybiera odpowiedź, a po potwierdzeniu przechodzi do następnego pytania.
   - Na końcu quizu następuje obliczenie wyniku (ilości poprawnych odpowiedzi, procentu) i zapisanie wyniku w bazie w kolekcji quiz_results. Następnie wyświetla się QuizResultsScreen.
-- QuizResultsScreen:
+- **QuizResultsScreen**:
   - Pokazuje podsumowanie quizu: procent poprawnych odpowiedzi, liczbę zdobytych punktów, czas trwania, oraz ewentualne uwagi.
   - Użytkownik może zobaczyć, które odpowiedzi udzielił poprawnie lub błędnie.
   - Przycisk pozwala powrócić do HomeScreen lub zagrać ponownie.
   - Wynik quizu jest też automatycznie zapisywany w historii użytkownika (kolekcja quiz_results).
-- QuizHistoryScreen:
+- **QuizHistoryScreen**:
   - Lista wszystkich zagranych przez użytkownika quizów.
   - Umożliwia przeglądanie przeszłych wyników i analizę postępów.
-- ManageQuizzesScreen:
+- **ManageQuizzesScreen**:
   - Zawiera listę quizów stworzonych przez obecnego użytkownika
   - Dla każdego quizu dostępne są opcje „Edytuj” (przejście do formularza edycji) oraz „Usuń” (kasowanie quizu).
-- CreateQuizScreen:
+- **CreateQuizScreen**:
   - Formularz do tworzenia nowego quizu lub edycji istniejącego.
   - Pola do wypełnienia: tytuł quizu, przedmiot, poziom trudności (np. lista wyboru „łatwy/średni/trudny”), opis (opcjonalny).
   - Sekcja do dodawania pytań: pytanie oraz lista możliwych odpowiedzi. Użytkownik może wybrać typ pytania (jednokrotny wybór, wielokrotny wybór, prawda/fałsz) i wskazać poprawne odpowiedzi.
   - Możliwość dodawania kolejnych pytań przez kliknięcie „Dodaj pytanie”.
   - Zawiera przyciski „Zapisz quiz” oraz „Anuluj”.
   - Walidacja: sprawdza, czy quiz ma minimum 1 pytanie, czy wszystkie pytania mają oznaczone poprawne odpowiedzi.
-- TitleSelectScreen:
+- **TitleSelectScreen**:
   - Pozwala użytkownikowi wybrać swój tytuł ze zbioru dostępnych tytułów. Tytuły mogą być zdobywane po spełnieniu pewnych warunków (np. liczba zagranych quizów).
   - Po wybraniu aktualizuje selectedTitle w profilu użytkownika.
-- YourProfile:
+- **YourProfile**:
   - Ekran profilu własnego użytkownika. Zawiera:
     - Awatar, nazwa użytkownika i wybrany tytuł.
     - Statystyki osobiste
     - Lista ulubionych quizów i odblokowanych tytułów.
     - Przycisk do edycji avatara.
     - Przycisk zmiany tytułu.
-- PublicProfileScreen:
+- **PublicProfileScreen**:
   - Profil innego użytkownika (np. kliknięty autor quizu).
   - Pokazuje nazwę i awatar użytkownika, jego tytuł oraz statystyki.
-- Settings:
+- **Settings**:
   - Ekran ustawień aplikacji. Zawiera opcje typu: Wyloguj się, zmień hasło/nazwę użytkownika, usuń konto.
-- MathMinigameScreen / ChemistryMinigameScreen / EnglishMinigameScreen:
+- **MathMinigameScreen / ChemistryMinigameScreen / EnglishMinigameScreen**:
   - Minigry edukacyjne dla trzech przedmiotów: matematyki, chemii i języka angielskiego.
   - Każda minigra jest osobnym ekranem, zawiera pytania.
 
