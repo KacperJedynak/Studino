@@ -3,7 +3,7 @@
 
 ## **Spis treści**
 
-- [Wprowadzenie](#wprowadzenie)
+- **[Wprowadzenie](#wprowadzenie)**
    - [Cel aplikacji](#cel-aplikacji)
    - [Technologie](#technologie)
 - [Szybki Start](#szybki-start)
@@ -17,14 +17,11 @@
 - [API i Integracje](#api-i-integracje)
 - [Nawigacja i flow aplikacji](#nawigacja-i-flow-aplikacji)
 - [UI](#ui)
-- [Debugowanie i monitoring](#debugowanie-i-monitoring)
-
+- [Debugowanie i monitoring](#debugowanie-i-monitoring)<br><br>
+- **[Baza Danych (Firebase Firestore)](#baza-danych-firebase-firestore)**
 - [Wprowadzenie i cele](#wprowadzenie-i-cele)
 - [Architektura bazy danych](#architektura-bazy-danych)
-- [Schemat bazy (DDL)](#schemat-bazy-ddl)  
-  - [Kolekcja `users`](#kolekcja-users)  
-  - [Kolekcja `quizzes`](#kolekcja-quizzes)  
-  - [Kolekcja `quiz_results`](#kolekcja-quiz_results)  
+- [Schemat bazy (DDL)](#schemat-bazy-ddl)    
 - [Słownik danych](#słownik-danych)
 - [Relacje i spójność](#relacje-i-spójność)
 - [Indeksy i optymalizacja](#indeksy-i-optymalizacja)
@@ -159,6 +156,9 @@ Studino/
 # Ekrany i funkcjonalności
 
 Każdy ekran aplikacji Studino pełni określoną rolę. Poniżej szczegółowy opis najważniejszych ekranów i ich funkcji:
+
+> [!NOTE]
+> [Makiety](https://www.figma.com/design/JgzkEbNSsxY5FV3qSpsf8U/Untitled?node-id=0-1&t=96L4DcN9GIEyFXya-1) ekranów zaplanowane w aplikacji Figma
 
 - **AuthLoadingScreen**:
   - Pierwszy ekran po uruchomieniu. Sprawdza stan autoryzacji (czy użytkownik jest już zalogowany).
@@ -421,6 +421,9 @@ AuthLoadingScreen
 
 
 # **Baza Danych (Firebase Firestore)**
+
+>[!NOTE]
+>[Diagram](https://dbdiagram.io/d/673d734ee9daa85aca0f76a3) bazy danych z encjami stworzony przy użyciu DBDiagram.io
 
 ## **Wprowadzenie i cele**
 
