@@ -29,17 +29,18 @@
 - [Widoki i procedury składowane](#widoki-i-procedury-składowane)
 - [Bezpieczeństwo i uprawnienia](#bezpieczeństwo-i-uprawnienia)
 - [Backup i odtwarzanie](#backup-i-odtwarzanie)
-- [Przykładowe zapytania i raporty](#przykładowe-zapytania-i-raporty)
+- [Przykładowe zapytania i raporty](#przykładowe-zapytania-i-raporty)<br><br><br>
 
 ## Jak zainstalować plik `studino`
 
-Poniżej jest instrukcja krok po kroku, jak pobrać i uruchomić aplikację Studino na Androidzie – zarówno na prawdziwym telefonie, jak i w emulatorze Android Studio.
+Poniżej jest instrukcja krok po kroku, jak pobrać i uruchomić aplikację **Studino** na Androidzie – zarówno na prawdziwym telefonie, jak i w emulatorze Android Studio.
 
 ---
 
 ### 📥 1. Pobierz plik APK z GitHuba
 
-Otwórz ten link i pobierz z tamtąd plik studino.apk na telefonie lub na komputerze. https://github.com/KacperJedynak/Studino 
+https://github.com/KacperJedynak/Studino/blob/main/studino.apk<br>
+Otwórz ten link i pobierz z tamtąd plik `studino.apk` na telefonie lub na komputerze naciskając `View Raw`.
 
 ---
 
@@ -53,7 +54,6 @@ Otwórz ten link i pobierz z tamtąd plik studino.apk na telefonie lub na komput
 4. **Kliknij „Zainstaluj”** i poczekaj, aż proces się zakończy.  
 5. **Uruchom aplikację** z pulpitu lub listy aplikacji – gotowe!
 
----
 
 > [!CAUTION]
 > ### ⚠️ Ostrzeżenie o “Nieznanych źródłach”
@@ -77,7 +77,7 @@ Otwórz ten link i pobierz z tamtąd plik studino.apk na telefonie lub na komput
 2. W Android Studio otwórz **Device Manager** (ikona telefonu w górnym pasku).  
 3. **Utwórz nowe wirtualne urządzenie (AVD)**:  
    - Wybierz np. **Pixel 6**.
-   - Jako System Image wybierz `UpsideDownCake 34 x86_64`, **koniecznie z Google APIs**  
+   - Jako System Image wybierz `UpsideDownCake 34 x86_64`, **koniecznie z `Google APIs`**
    - Kliknij **Finish**.  
 4. **Uruchom emulator** (naciśnij ▶ obok utworzonego AVD).  
 5. Gdy emulator jest gotowy, **przeciągnij plik `studino.apk`** na jego okno – instalacja ruszy automatycznie.  
@@ -88,7 +88,7 @@ Otwórz ten link i pobierz z tamtąd plik studino.apk na telefonie lub na komput
 ### 🎉 I to wszystko!
 
 – Są teraz dwie metody, by przetestować i korzystać z aplikacji Studino.  
-– Wybierz telefon (szybciej) lub emulator do wygodnych testów na desktopie (może wymagać dodatkowej konfiguracji).  
+– Wybierz telefon (szybciej i łatwiej) lub emulator do wygodnych testów na komputerze (może wymagać dodatkowej konfiguracji).  
 – Przy pierwszej instalacji na telefonie – po prostu zezwól na instalację z nieznanych źródeł i ciesz się aplikacją!<br><br><br><br>
 
 
