@@ -1,13 +1,16 @@
 # **Dokumentacja aplikacji `Studino`**
 
-# **[Instalacja](#jak-zainstalować-plik-studino)**
+<br>
 
-## **Spis treści**
+# **[Instalacja](#jak-zainstalować-aplikację-studino)**
 
-- **[Wprowadzenie](#wprowadzenie)**
+<br>
+
+## **Spis treści:**
+
+### **[Wprowadzenie](#wprowadzenie)**
    - [Cel aplikacji](#cel-aplikacji)
    - [Technologie](#technologie)
-- [Szybki Start](#szybki-start)
 - [Zależności projektu](#zależności-projektu)
 - [Struktura katalogów](#struktura-katalogów)
 - [Ekrany i funkcjonalności](#ekrany-i-funkcjonalności)
@@ -19,7 +22,7 @@
 - [Nawigacja i flow aplikacji](#nawigacja-i-flow-aplikacji)
 - [UI](#ui)
 - [Debugowanie i monitoring](#debugowanie-i-monitoring)<br><br>
-- **[Baza Danych (Firebase Firestore)](#baza-danych-firebase-firestore)**
+### **[Baza Danych (Firebase Firestore)](#baza-danych-firebase-firestore)**
 - [Wprowadzenie i cele](#wprowadzenie-i-cele)
 - [Architektura bazy danych](#architektura-bazy-danych)
 - [Schemat bazy (DDL)](#schemat-bazy-ddl)    
@@ -103,38 +106,6 @@ Umożliwienie użytkownikom **łatwego tworzenia i rozgrywania quizów** oraz ś
 
 ## **Technologie**
 Studino zostało napisane w **React Native** i wykorzystuje Firebase do autentykacji, Firestore Database, Storage. Do zarządzania stanem aplikacji wykorzystywane są **Hooki Reacta** oraz bezpośrednie zapytania do bazy **Firestore**. Do przechodzenia między ekranami wykorzystano bibliotekę React Navigation (Stack Navigator), a do wyglądu UI różne biblioteki m.in. `react-native-elements`, `react-native-modal`, `react-native-safe-area-context`.
-
-# **Szybki Start**
-Aby szybko rozpocząć pracę z projektem Studino, należy postępować według poniższych kroków:
-
-1. **Wymagania wstępne**:
-   - **Node.js** i **npm** lub **yarn** – do instalacji zależności i uruchamiania bundlera React Native.
-   - **Android Studio** z **Android SDK** – do budowania wersji na Android.
-   - **Urządzenie lub emulator**: Można użyć fizycznego telefonu, podłączonego przez kabel USB lub emulatora Androida do testów.
-   - **Google CLI Android**: Aby testować logowanie Google na Androidzie, trzeba skonfiguruować SHA-1 w konsoli Firebase i wygenerować plik `google-services.json`.
-2. Pobranie projektu:
-   - Pobierz plik `.zip` i go wypakuj
-   - Przejdź do folderu za pomocą:
-     
-     ```cd studino```
-     
-3. W katalogu głównym wykonaj
-
-   ```
-   npm install
-   ```
-
-   lub
-
-   ```
-   yarn install
-   ```
-
-5. Uruchomienie aplikacji:
-
-   ```
-   npm run android
-   ```
 
 # Zależności projektu
 
