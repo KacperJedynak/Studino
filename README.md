@@ -31,16 +31,16 @@
 - [Backup i odtwarzanie](#backup-i-odtwarzanie)
 - [Przykładowe zapytania i raporty](#przykładowe-zapytania-i-raporty)<br><br><br>
 
-## Jak zainstalować plik `studino`
+## Jak zainstalować aplikację `studino`
 
-Poniżej jest instrukcja krok po kroku, jak pobrać i uruchomić aplikację **Studino** na Androidzie – zarówno na prawdziwym telefonie, jak i w emulatorze Android Studio.
+Poniżej jest instrukcja krok po kroku, jak pobrać i uruchomić aplikację **Studino** na Androidzie – zarówno na prawdziwym telefonie, jak i na komputerze w emulatorze Android Studio.
 
 ---
 
 ### 📥 1. Pobierz plik APK z GitHuba
 
 https://github.com/KacperJedynak/Studino/blob/main/studino.apk<br>
-Otwórz ten link i pobierz z tamtąd plik `studino.apk` na telefonie lub na komputerze naciskając `View Raw`.
+Otwórz ten link i pobierz z tamtąd plik `studino.apk` na telefonie lub na komputerze, naciskając `View Raw`.
 
 ---
 
