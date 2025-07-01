@@ -1,12 +1,17 @@
-# **Dokumentacja aplikacji `Studino`**
+# 📚 Dokumentacja aplikacji **`Studino`**
 
-<br>
+Witamy w dokumentacji aplikacji **Studino!**
 
-# **[Instalacja](#jak-zainstalować-aplikację-studino)**
+---
 
-<br>
+## 🔧 Instalacja
 
-## **Spis treści:**
+Zobacz: [Jak zainstalować aplikację Studino](#jak-zainstalować-aplikację-studino)
+
+---
+
+## 📑 Spis treści
+
 
 ### **[Wprowadzenie](#wprowadzenie)**
    - [Cel aplikacji](#cel-aplikacji)
