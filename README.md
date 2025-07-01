@@ -13,7 +13,7 @@ Zobacz: [Jak zainstalować aplikację Studino](#jak-zainstalować-aplikację-stu
 ## 📑 Spis treści
 
 
-### **[Wprowadzenie](#wprowadzenie)**
+### **[Dokumentacja ogólna](#wprowadzenie)**
    - [Cel aplikacji](#cel-aplikacji)
    - [Technologie](#technologie)
 - [Zależności projektu](#zależności-projektu)
