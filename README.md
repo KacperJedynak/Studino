@@ -1,5 +1,6 @@
 # **Dokumentacja aplikacji `Studino`**
 
+# **[Instalacja](#jak-zainstalować-plik-studino)**
 
 ## **Spis treści**
 
@@ -29,6 +30,67 @@
 - [Bezpieczeństwo i uprawnienia](#bezpieczeństwo-i-uprawnienia)
 - [Backup i odtwarzanie](#backup-i-odtwarzanie)
 - [Przykładowe zapytania i raporty](#przykładowe-zapytania-i-raporty)
+
+## Jak zainstalować plik `studino`
+
+Poniżej jest instrukcja krok po kroku, jak pobrać i uruchomić aplikację Studino na Androidzie – zarówno na prawdziwym telefonie, jak i w emulatorze Android Studio.
+
+---
+
+### 📥 1. Pobierz plik APK z GitHuba
+
+Otwórz ten link i pobierz z tamtąd plik studino.apk na telefonie lub na komputerze. https://github.com/KacperJedynak/Studino 
+
+---
+
+## 🏁 Opcja A: Instalacja na prawdziwym telefonie
+
+1. **Przenieś `studino.apk` na telefon**  
+   - Przez kabel USB (skopiuj plik z komputera do telefonu),  
+   - Lub pobierz bezpośrednio przez przeglądarkę mobilną (krok “Pobierz APK” wyżej).  
+2. **Otwórz menedżera plików** na telefonie i znajdź `studino.apk`.  
+3. **Kliknij APK**, zatwierdź zezwolenie na instalację z nieznanych źródeł (jeśli się pojawi).  
+4. **Kliknij „Zainstaluj”** i poczekaj, aż proces się zakończy.  
+5. **Uruchom aplikację** z pulpitu lub listy aplikacji – gotowe!
+
+---
+
+> [!CAUTION]
+> ### ⚠️ Ostrzeżenie o “Nieznanych źródłach”
+> 
+> Podczas instalacji pliku spoza Google Play może pojawić się komunikat:
+> > **„Instalacja z nieznanych źródeł”** lub **„Zezwól tej aplikacji na instalowanie aplikacji z nieznanych źródeł?”**
+>
+> - **Dlaczego?**  
+>  System Android ostrzega przed zainstalowaniem programów spoza oficjalnego sklepu, jako, że nie jest to oficjalny projekt ze Sklepu Play to będzie się wyświetlał taki komunikat.  
+> - **Co zrobić?**  
+>   Nie musisz się martwić to jest normalne, zezwól na instalację tego pliku. 
+
+---
+
+## 💻 Opcja B: Uruchomienie w emulatorze Android Studio
+
+> *Potrzebujesz komputera z Android Studio.*
+
+1. **Zainstaluj Android Studio** (jeśli jeszcze nie masz):  
+   https://developer.android.com/studio  
+2. W Android Studio otwórz **Device Manager** (ikona telefonu w górnym pasku).  
+3. **Utwórz nowe wirtualne urządzenie (AVD)**:  
+   - Wybierz np. **Pixel 6**.
+   - Jako System Image wybierz `UpsideDownCake 34 x86_64`, **koniecznie z Google APIs**  
+   - Kliknij **Finish**.  
+4. **Uruchom emulator** (naciśnij ▶ obok utworzonego AVD).  
+5. Gdy emulator jest gotowy, **przeciągnij plik `studino.apk`** na jego okno – instalacja ruszy automatycznie.  
+6. W emulatorze znajdziesz ikonę Studino; kliknij, aby uruchomić.
+
+---
+
+### 🎉 I to wszystko!
+
+– Są teraz dwie metody, by przetestować i korzystać z aplikacji Studino.  
+– Wybierz telefon (szybciej) lub emulator do wygodnych testów na desktopie (może wymagać dodatkowej konfiguracji).  
+– Przy pierwszej instalacji na telefonie – po prostu zezwól na instalację z nieznanych źródeł i ciesz się aplikacją!<br><br><br><br>
+
 
   
 # Wprowadzenie
